@@ -318,8 +318,194 @@ a:focus {
 }
 
 /*main*/
-.main {
+/*header_section*/
+.header__section {
+    width: 100%;
+    height: 100vh;
     background-color: #ebeafa;
+    padding-top: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*header*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu--item {
+    margin-right: 3rem;
+}
+
+.nav__menu--item:last-child {
+    margin-right: 0;
+}
+
+.nav__menu--link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Overpass", sans-serif;
+    color: #111111;
+    transition: color 0.2s linear;
+}
+
+.nav__menu--link:hover {
+    color: #c04ae2;
+}
+
+.nav__btn {
+    font-size: 1.8rem;
+    font-family: "Overpass", sans-serif;
+    color: #111111;
+    font-weight: bold;
+    padding: 1.4rem 1.2rem 1rem 1.2rem;
+    background-color: transparent;
+    border: 1px solid #c04ae2;
+    border-radius: 0.5rem;
+    transition: color 0.2s linear, background-color 0.2s linear;
+    line-height: 2rem;
+}
+
+.nav__btn:hover {
+    cursor: pointer;
+    background-color: #c04ae2;
+    color: #ffffff;
+}
+
+.nav__btn:active {
+    transform: scale(0.95);
+}
+
+.social__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.social__menu--item {
+    margin-right: 3rem;
+}
+
+.social__menu--item:last-child {
+    margin-right: 0;
+}
+
+.social__menu--link {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-facebook-f {
+    color: #3b5998;
+    transition: color 0.2s linear;
+}
+
+.fa-facebook-f:hover {
+    color: #c04ae2;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+    transition: color 0.2s linear;
+}
+
+.fa-twitter:hover {
+    color: #c04ae2;
+}
+
+.fa-youtube {
+    color: #ff1e00;
+    transition: color 0.2s linear;
+}
+
+.fa-youtube:hover {
+    color: #c04ae2;
+}
+
+.fa-instagram {
+    color: #dd4b39;
+    transition: color 0.2s linear;
+}
+
+.fa-instagram:hover {
+    color: #c04ae2;
+}
+
+.burger__btn {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #c04ae2;
+    border-radius: 0.5rem;
+    position: relative;
+    transition: background-color 0.2s linear;
+}
+
+.burger__btn span {
+    display: block;
+    width: 3.4rem;
+    height: 0.2rem;
+    background-color: #111111;
+    transition: background-color 0.2s linear;
+    border-radius: 1px;
+    position: absolute;
+    left: 0.2rem;
+    top: 1.9rem;
+    transition: width 0.1s linear, transform 0.3s linear;
+}
+
+.burger__btn span:first-child {
+    top: 1.2rem;
+}
+
+.burger__btn span:last-child {
+    top: 2.6rem;
+}
+
+.burger__btn:hover {
+    cursor: pointer;
+    background-color: #c04ae2;
+}
+
+.burger__btn:hover span {
+    background-color: #ffffff;
+}
+
+.burger__btn:active {
+    transform: scale(0.95);
+}
+
+.burger__btn--open {
+    background-color: #c04ae2;
+}
+
+.burger__btn--open span {
+    background-color: #ffffff;
+}
+
+.burger__btn--open span:first-child {
+    width: 0;
+}
+
+.burger__btn--open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.burger__btn--open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.burger__btn--open span:last-child {
+    width: 0;
+}
