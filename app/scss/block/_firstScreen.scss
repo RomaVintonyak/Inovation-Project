@@ -1,0 +1,31 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.first__screen {
+   margin-top: 10%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   position: relative;
+   z-index: 25;
+}
+.block__title {
+   width: 45%;
+}
+.main__title {
+   font-size: 8rem;
+   font-family: $overpass;
+   color: $title;
+   font-weight: 700;
+   margin-bottom: 2rem;
+}
+.sup__title {
+   font-size: 2.4rem;
+   font-family: $popins;
+   font-weight: 400;
+   color: $text;
+   margin-bottom: 2rem;
+}
+.block__image {
+   width: 45%;
+}

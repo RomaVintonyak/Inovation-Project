@@ -1,0 +1,28 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.btn {
+   background-color: transparent;
+   border: none;
+   font-size: 2.4rem;
+   font-family: $overpass;
+   color: $white;
+   font-weight: bold;
+   width: 24rem;
+   height: 7rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid $active;
+   border-radius: 0.5rem;
+   background-color: $active;
+   transition: background-color 0.2s linear, color 0.2s linear;
+   &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      color: $title;
+   }
+   &:active {
+      transform: scale(0.95);
+   }
+}

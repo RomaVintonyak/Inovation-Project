@@ -326,6 +326,33 @@ a:focus {
     padding-top: 4rem;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.header__section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url(../../img/background_header/blur_element.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/background_header/bg_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 15;
 }
 
 /*header*/
@@ -333,6 +360,8 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 25;
 }
 
 .nav__menu {
@@ -444,6 +473,7 @@ a:focus {
 }
 
 .burger__btn {
+    display: none;
     width: 4rem;
     height: 4rem;
     border: 1px solid #c04ae2;
@@ -508,4 +538,175 @@ a:focus {
 
 .burger__btn--open span:last-child {
     width: 0;
+}
+
+/*first screen*/
+.first__screen {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 25;
+}
+
+.block__title {
+    width: 45%;
+}
+
+.main__title {
+    font-size: 8rem;
+    font-family: "Overpass", sans-serif;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.sup__title {
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #5e5858;
+    margin-bottom: 2rem;
+}
+
+.block__image {
+    width: 45%;
+}
+
+/*btn*/
+.btn {
+    background-color: transparent;
+    border: none;
+    font-size: 2.4rem;
+    font-family: "Overpass", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    width: 24rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c04ae2;
+    border-radius: 0.5rem;
+    background-color: #c04ae2;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #111111;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/*intro*/
+.intro {
+    width: 100%;
+    height: 100vh;
+    background-position: top 4rem right 4rem;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-image: url(../../img/intro/blur_element.png);
+    background-position: center right 0;
+    background-repeat: round;
+}
+
+.intro__block {
+    position: relative;
+    z-index: 15;
+}
+
+.intro__block--title {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.intro__block--title h3 {
+    font-size: 2.4rem;
+    font-family: "Overpass", sans-serif;
+    color: #c04ae2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.intro__block--title h2 {
+    font-family: "Overpass", sans-serif;
+    color: #111111;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.intro__block--collum {
+    margin-top: 8rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.block__collum {
+    width: 31%;
+    text-align: center;
+    padding: 8rem 3rem;
+    border: 3px solid #000000;
+    border-radius: 1.5rem;
+    transition: box-shadow 0.2s linear;
+}
+
+.block__collum img {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.block__collum--title {
+    font-size: 2.6rem;
+    font-family: "Overpass", sans-serif;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.block__collum--text {
+    font-size: 2rem;
+    font-family: "Overpass", sans-serif;
+    color: #5e5858;
+    font-weight: 400;
+}
+
+.block__collum--first {
+    border-color: #fcd7df;
+}
+
+.block__collum--first:hover {
+    box-shadow: 7px 6px 23px 7px rgba(252, 215, 223, 0.8);
+}
+
+.block__collum--second {
+    border-color: #c9f3e2;
+}
+
+.block__collum--second:hover {
+    box-shadow: 7px 6px 23px 7px rgba(201, 243, 226, 0.8);
+}
+
+.block__collum--third {
+    border-color: #f2d5ba;
+}
+
+.block__collum--third:hover {
+    box-shadow: 7px 6px 23px 7px rgba(242, 213, 186, 0.8);
 }
